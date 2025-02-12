@@ -1,0 +1,17 @@
+ul{
+  list-style: none;
+  li{
+    display: inline-block;
+
+    a{
+      text-decoration: none;
+      padding: 8px 15px;
+      border: 1px solid red;
+      cursor: pointer;
+    }
+  }
+}
+.active{
+  color: white!important;
+  background-color: red!important;
+}
