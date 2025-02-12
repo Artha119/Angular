@@ -21,9 +21,10 @@ constructor(private _service: PhotosService) {
   this.loadAllComments()
 }
 loadAllPhotos(){
-  this._service.findAllPhotos().subscribe(response=>{
-    this.photos=response;
-    console.log(response);
+  this._service.findAllPhotos().subscribe({
+    next:(data)=>this.photos=data,
+    error:(error)=> console.log(error),
+    complete:()=>console.log('completed')
 });
 }
 
