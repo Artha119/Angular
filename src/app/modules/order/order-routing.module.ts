@@ -4,7 +4,8 @@ import {OrderDefaultComponent} from './components/order-default/order-default.co
 
 const routes: Routes = [
   {path:'', redirectTo:'/order/default-order', pathMatch:'full'},
-  {path:'default-order', component: OrderDefaultComponent}
+  {path:'default-order', component: OrderDefaultComponent},
+  { path: 'order-list', loadChildren: () => import('./modules/order-list/order-list.module').then(m => m.OrderListModule) }
 ];
 
 @NgModule({

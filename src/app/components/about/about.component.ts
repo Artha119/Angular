@@ -4,7 +4,7 @@ import {log} from 'util';
 import {FormControl, ReactiveFormsModule} from '@angular/forms';
 import {CurrencyPipe, DatePipe, JsonPipe, SlicePipe, UpperCasePipe} from '@angular/common';
 import {json} from 'express';
-import {SubstringPipe} from './SubstringPipe';
+import {SubstringPipe} from '../../pipes/SubstringPipe';
 
 @Component({
   selector: 'app-about',
